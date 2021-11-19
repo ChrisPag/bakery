@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300&family=Open+Sans&family=Ubuntu&display=swap");
+* {
+  font-family: "Open Sans", sans-serif;
+  background-color: #FEFDF3;
+}
+
+.navbar {
+  background-color: #AAE0F0;
+  height: 100px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.navbar p {
+  background-color: #AAE0F0;
+}
