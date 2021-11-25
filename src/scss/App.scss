@@ -1,19 +1,74 @@
-@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300&family=Open+Sans&family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
 @import 'variables';
 
-*{
-    font-family:"Open Sans", sans-serif;
+* {
+    font-family:"Poppins", sans-serif;
     background-color:$offWhite;
 }
-.navbar{
-    background-color:$skyBlue;
-    height:100px;
-    width:100%;
-    align-items: center;
-    justify-content: center;
-    display:flex;
+
+.navbar {
+    position:relative;
+    float:left;
+    font-size:22px;
+    margin-top:25px;
+    padding-bottom:20px;
     
-    p{
-        background-color:$skyBlue;
+    #logo-title{
+        color:$darkPink;
+        padding-right:20px;
+        padding-left:80px;
+        font-size:28px;
+        font-weight: bold;
+    }
+
+    img {
+        margin-left:20px;
+        position:absolute;
+        margin-top:-8px;
+    }
+
+    a {
+        color:$offBlack;
+        text-decoration: none;
+        padding:20px;
+        transition: 0.3s;
+        &:hover{
+            color:rgb(114, 114, 114);;
+        }
+    }
+
+    .navlinks {
+        margin-top:50px;
+    }
+}
+
+.home {
+    .img-content{
+        margin-left:10%;
+    }
+
+    p {
+        margin-top:-40%;
+        margin-bottom:20px;
+        background:none;
+        font-size:80px;
+        font-weight: bold;
+        color:$offBlack;
+    }
+
+    button {
+        color:rgb(90, 90, 90);
+        border:2px solid $lightPink;
+        border-radius:30px;
+        padding:15px;
+        padding-left:30px;
+        padding-right:30px;
+        background-color:$offWhite;
+        transition: 0.3s;
+        &:hover{
+            background-color:$lightPink;
+            color:$offBlack;
+            cursor:pointer;
+        }
     }
 }

@@ -1,17 +1,64 @@
-@import url("https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@300&family=Open+Sans&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #FEFDF3;
 }
 
 .navbar {
-  background-color: #AAE0F0;
-  height: 100px;
-  width: 100%;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+  position: relative;
+  float: left;
+  font-size: 22px;
+  margin-top: 25px;
+  padding-bottom: 20px;
 }
-.navbar p {
-  background-color: #AAE0F0;
+.navbar #logo-title {
+  color: #fd9bb4;
+  padding-right: 20px;
+  padding-left: 80px;
+  font-size: 28px;
+  font-weight: bold;
+}
+.navbar img {
+  margin-left: 20px;
+  position: absolute;
+  margin-top: -8px;
+}
+.navbar a {
+  color: #414141;
+  text-decoration: none;
+  padding: 20px;
+  transition: 0.3s;
+}
+.navbar a:hover {
+  color: #727272;
+}
+.navbar .navlinks {
+  margin-top: 50px;
+}
+
+.home .img-content {
+  margin-left: 10%;
+}
+.home p {
+  margin-top: -40%;
+  margin-bottom: 20px;
+  background: none;
+  font-size: 80px;
+  font-weight: bold;
+  color: #414141;
+}
+.home button {
+  color: #5a5a5a;
+  border: 2px solid #ffdae4;
+  border-radius: 30px;
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #FEFDF3;
+  transition: 0.3s;
+}
+.home button:hover {
+  background-color: #ffdae4;
+  color: #414141;
+  cursor: pointer;
 }
