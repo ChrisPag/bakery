@@ -8,7 +8,7 @@ const Navbar = () => {
             <div class="nav-links">
                 
                 <span id="logo-title">
-                    Smitty's
+                    Smitty's Sweets
                 </span>
                 
                 <a href="#">Home</a>

@@ -36,14 +36,21 @@
   margin-top: 50px;
 }
 
+.home {
+  /*Setting container to relative, and child divs to absolute means the
+  divs scale together*/
+  position: relative;
+}
 .home .img-content {
+  position: absolute;
   margin-left: 10%;
 }
-.home p {
-  margin-top: -40%;
+.home .img-content p {
+  margin-top: -115%;
   margin-bottom: 20px;
   background: none;
-  font-size: 80px;
+  /*vw is % of viewport width*/
+  font-size: 6vw;
   font-weight: bold;
   color: #414141;
 }
@@ -61,4 +68,23 @@
   background-color: #ffdae4;
   color: #414141;
   cursor: pointer;
+}
+.home .bestseller-head {
+  position: absolute;
+  width: 100%;
+  background-color: #c5936a;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-top: -8px;
+}
+.home .bestseller-head * {
+  background-color: #c5936a;
+}
+.home .bestseller-head p {
+  color: #FEFDF3;
+  margin-left: 20px;
+}
+.home .bestseller-head #shop-best {
+  float: right;
+  padding-right: 20px;
 }

@@ -43,17 +43,23 @@
 }
 
 .home {
-    .img-content{
-        margin-left:10%;
-    }
+    /*Setting container to relative, and child divs to absolute means the
+    divs scale together*/
+    position: relative;
 
-    p {
-        margin-top:-40%;
-        margin-bottom:20px;
-        background:none;
-        font-size:80px;
-        font-weight: bold;
-        color:$offBlack;
+    .img-content{
+        position:absolute;
+        margin-left:10%;
+
+        p {
+            margin-top:-115%;
+            margin-bottom:20px;
+            background:none;
+            /*vw is % of viewport width*/
+            font-size:6vw;
+            font-weight: bold;
+            color:$offBlack;
+        }
     }
 
     button {
@@ -69,6 +75,30 @@
             background-color:$lightPink;
             color:$offBlack;
             cursor:pointer;
+        }
+    }
+
+    .bestseller-head{
+        position:absolute;
+        width:100%;
+        background-color:$cuteBrown;
+        padding-top:1%;
+        padding-bottom:1%;
+        margin-top:-8px;
+
+        *{
+            background-color:$cuteBrown;
+        }
+
+        p{
+            
+            color:$offWhite;
+            margin-left:20px;
+        }
+
+        #shop-best{
+            float:right;
+            padding-right:20px;
         }
     }
 }
