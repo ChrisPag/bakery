@@ -3,16 +3,28 @@
 
 * {
     font-family:"Poppins", sans-serif;
-    background-color:$offWhite;
+    
+    -moz-box-sizing: border-box;
+    -webkit-kit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+      
 }
 
+.App{
+    position: relative;
+}
+
+/* NAVIGATION */
 .navbar {
-    position:relative;
-    float:left;
-    font-size:22px;
-    margin-top:25px;
-    padding-bottom:20px;
-    
+    font-size:20px;
+    padding-bottom:25px;
+    padding-top:20px;
+    background-color: $offWhite;
+    // /overflow:hidden;
+
     #logo-title{
         color:$darkPink;
         padding-right:20px;
@@ -21,84 +33,53 @@
         font-weight: bold;
     }
 
-    img {
-        margin-left:20px;
-        position:absolute;
-        margin-top:-8px;
+    #logo{
+        /*this makes the scroll bar disappear on hover for some reason
+        position:absolute;*/
+        padding-left:20px;
+        margin-top:22px;
+        
     }
 
-    a {
-        color:$offBlack;
-        text-decoration: none;
-        padding:20px;
-        transition: 0.3s;
+    .icon{
+        margin-left:10px;
         &:hover{
-            color:rgb(114, 114, 114);;
+            opacity:0.6;
         }
     }
 
-    .navlinks {
-        margin-top:50px;
+    .iconLinks{
+        float:right;
+        margin-right:20px;
+        margin-top:5px;
+    }
+
+    .nav-links {
+        
+        .active {
+            color:$darkPink;
+        }
+        a{
+            text-decoration: none;
+            color:rgb(97, 97, 97);
+            padding-left:40px;
+            transition: 0.3s;
+            &:hover{
+                color:$darkPink;
+            }
+        }
     }
 }
 
-.home {
-    /*Setting container to relative, and child divs to absolute means the
-    divs scale together*/
-    position: relative;
-
-    .img-content{
-        position:absolute;
-        margin-left:10%;
-
-        p {
-            margin-top:-115%;
-            margin-bottom:20px;
-            background:none;
-            /*vw is % of viewport width*/
-            font-size:6vw;
-            font-weight: bold;
-            color:$offBlack;
-        }
-    }
-
-    button {
-        color:rgb(90, 90, 90);
-        border:2px solid $lightPink;
-        border-radius:30px;
-        padding:15px;
-        padding-left:30px;
-        padding-right:30px;
-        background-color:$offWhite;
-        transition: 0.3s;
-        &:hover{
-            background-color:$lightPink;
-            color:$offBlack;
-            cursor:pointer;
-        }
-    }
-
-    .bestseller-head{
-        position:absolute;
-        width:100%;
-        background-color:$cuteBrown;
-        padding-top:1%;
-        padding-bottom:1%;
-        margin-top:-8px;
-
-        *{
-            background-color:$cuteBrown;
-        }
-
-        p{
-            
-            color:$offWhite;
-            margin-left:20px;
-        }
-
-        #shop-best{
-            float:right;
-            padding-right:20px;
-        }
-    }
+/* FOOTER */
+.footer{
+    padding:10px;
+    position:absolute;
+    //bottom:0;
+    margin-top: 25vw;
+    right:0;
+    width:100%;
+    background-color:$cuteBrown;
+    text-align:center;
+    //height:20px;
 }

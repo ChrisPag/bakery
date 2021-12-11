@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* HOME PAGE */
+.home {
+  /*Setting container to relative, and child divs to absolute means the
+  divs scale together*/
+  position: relative;
+  background-color: #FEFDF3;
+}
+.home .banner-content {
+  position: absolute;
+  margin-left: 10%;
+  margin-top: -34%;
+  padding: 3vw;
+  border: 5px solid #FEFDF3;
+  text-align: center;
+}
+.home .banner-content p {
+  margin-top: 1vw;
+  margin-bottom: 1vw;
+  background: none;
+  /*vw is % of viewport width*/
+  font-size: 5vw;
+  font-weight: bold;
+  color: #FEFDF3;
+}
+.home button {
+  color: #5a5a5a;
+  /*border-radius:30px;
+  padding:15px;
+  padding-left:30px;
+  padding-right:30px;*/
+  padding: 1.2vw;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  border-radius: 3vw;
+  border: none;
+  background-color: #FEFDF3;
+  transition: 0.3s;
+}
+.home button:hover {
+  background-color: #ffdae4;
+  color: #414141;
+  cursor: pointer;
+}
+.home h2 {
+  text-align: center;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #616161;
+  font-size: calc(10px + 1.5vw);
+}
+.home #featured-desc {
+  width: 50%;
+  margin-left: 25%;
+  padding-bottom: 30px;
+  padding-top: 20px;
+  color: #c5936a;
+  background-color: #FEFDF3;
+}
+.home .grid-container {
+  position: absolute;
+  display: grid;
+  grid-template-columns: 20% 20% 20%;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 50px;
+  margin-top: -30px;
+  gap: 30px;
+  background-color: #FEFDF3;
+  color: #c5936a;
+}
+.home .grid-container .grid-item {
+  border-radius: 4%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.home .grid-container img {
+  width: 100%;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  transition: 0.5s ease;
+}
+.home .grid-container span {
+  font-weight: bold;
+  font-size: 20px;
+}
+.home .overlay-cont {
+  position: relative;
+  width: 100%;
+}
+.home .overlay-cont:hover img {
+  opacity: 0.2;
+}
+.home .overlay-cont .overlay {
+  transition: 0.5s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+}
+.home .overlay-cont .overlay:hover {
+  cursor: pointer;
+}
+.home .overlay-cont p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  color: #414141;
+  font-size: calc(6px + 1vw);
+}
+.home .overlay-cont:hover .overlay {
+  opacity: 0.9;
+}

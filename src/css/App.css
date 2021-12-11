@@ -1,15 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
   font-family: "Poppins", sans-serif;
-  background-color: #FEFDF3;
+  -moz-box-sizing: border-box;
+  -webkit-kit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
 }
 
-.navbar {
+.App {
   position: relative;
-  float: left;
-  font-size: 22px;
-  margin-top: 25px;
-  padding-bottom: 20px;
+}
+
+/* NAVIGATION */
+.navbar {
+  font-size: 20px;
+  padding-bottom: 25px;
+  padding-top: 20px;
+  background-color: #FEFDF3;
 }
 .navbar #logo-title {
   color: #fd9bb4;
@@ -18,73 +27,43 @@
   font-size: 28px;
   font-weight: bold;
 }
-.navbar img {
-  margin-left: 20px;
-  position: absolute;
-  margin-top: -8px;
+.navbar #logo {
+  /*this makes the scroll bar disappear on hover for some reason
+  position:absolute;*/
+  padding-left: 20px;
+  margin-top: 22px;
 }
-.navbar a {
-  color: #414141;
+.navbar .icon {
+  margin-left: 10px;
+}
+.navbar .icon:hover {
+  opacity: 0.6;
+}
+.navbar .iconLinks {
+  float: right;
+  margin-right: 20px;
+  margin-top: 5px;
+}
+.navbar .nav-links .active {
+  color: #fd9bb4;
+}
+.navbar .nav-links a {
   text-decoration: none;
-  padding: 20px;
+  color: #616161;
+  padding-left: 40px;
   transition: 0.3s;
 }
-.navbar a:hover {
-  color: #727272;
-}
-.navbar .navlinks {
-  margin-top: 50px;
+.navbar .nav-links a:hover {
+  color: #fd9bb4;
 }
 
-.home {
-  /*Setting container to relative, and child divs to absolute means the
-  divs scale together*/
-  position: relative;
-}
-.home .img-content {
+/* FOOTER */
+.footer {
+  padding: 10px;
   position: absolute;
-  margin-left: 10%;
-}
-.home .img-content p {
-  margin-top: -115%;
-  margin-bottom: 20px;
-  background: none;
-  /*vw is % of viewport width*/
-  font-size: 6vw;
-  font-weight: bold;
-  color: #414141;
-}
-.home button {
-  color: #5a5a5a;
-  border: 2px solid #ffdae4;
-  border-radius: 30px;
-  padding: 15px;
-  padding-left: 30px;
-  padding-right: 30px;
-  background-color: #FEFDF3;
-  transition: 0.3s;
-}
-.home button:hover {
-  background-color: #ffdae4;
-  color: #414141;
-  cursor: pointer;
-}
-.home .bestseller-head {
-  position: absolute;
+  margin-top: 25vw;
+  right: 0;
   width: 100%;
   background-color: #c5936a;
-  padding-top: 1%;
-  padding-bottom: 1%;
-  margin-top: -8px;
-}
-.home .bestseller-head * {
-  background-color: #c5936a;
-}
-.home .bestseller-head p {
-  color: #FEFDF3;
-  margin-left: 20px;
-}
-.home .bestseller-head #shop-best {
-  float: right;
-  padding-right: 20px;
+  text-align: center;
 }
