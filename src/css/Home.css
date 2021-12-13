@@ -8,7 +8,6 @@
   /*Setting container to relative, and child divs to absolute means the
   divs scale together*/
   position: relative;
-  background-color: #FEFDF3;
 }
 .home .banner-content {
   position: absolute;
@@ -17,6 +16,7 @@
   padding: 3vw;
   border: 5px solid #FEFDF3;
   text-align: center;
+  background-color: transparent;
 }
 .home .banner-content p {
   margin-top: 1vw;
@@ -38,7 +38,6 @@
   padding-right: 2vw;
   border-radius: 3vw;
   border: none;
-  background-color: #FEFDF3;
   transition: 0.3s;
 }
 .home button:hover {
@@ -52,6 +51,7 @@
   margin-bottom: 30px;
   color: #616161;
   font-size: calc(10px + 1.5vw);
+  padding-top: 30px;
 }
 .home #featured-desc {
   width: 50%;
@@ -59,18 +59,18 @@
   padding-bottom: 30px;
   padding-top: 20px;
   color: #c5936a;
-  background-color: #FEFDF3;
 }
 .home .grid-container {
-  position: absolute;
+  position: relative;
   display: grid;
-  grid-template-columns: 20% 20% 20%;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-content: center;
   text-align: center;
-  padding-bottom: 50px;
+  margin-bottom: 50px;
   margin-top: -30px;
+  padding-left: 15%;
+  padding-right: 15%;
   gap: 30px;
-  background-color: #FEFDF3;
   color: #c5936a;
 }
 .home .grid-container .grid-item {

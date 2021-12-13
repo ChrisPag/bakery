@@ -17,7 +17,6 @@ const Home = () => {
             </div>
     
             <h2>Our Featured Treats</h2>
-
             <div className="grid-container">
 
                 <div className="grid-item">

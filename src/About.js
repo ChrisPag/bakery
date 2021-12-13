@@ -13,13 +13,25 @@ const About = () =>{
                 </div>
             </div>
             
-            <div className="content">
-                <img id="cake" src={Cake} alt="cake"/>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-                elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                magna aliqua</p>
+            <div className="container">
+                <div className="content">
+                    <img id="cake" src={Cake} alt="cake"/>
+  
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua</p>
+                </div>
+                    
+                <div id="content2" className="content" >
+                    <img id="cake" src={Cake} alt="cake"/>
+
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
+                    elit, sed do eiusmod tempor incididunt ut labore et dolore 
+                    magna aliqua</p>
+                </div>
             </div>
         </div>
+
     );
 }
 

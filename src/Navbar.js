@@ -6,10 +6,10 @@ import { useState, useEffect } from 'react';
 import {NavLink} from 'react-router-dom';
 const Navbar = () => {  
   //When window is less than 900px, isDesktop is true
-  const [isDesktop, setDesktop] = useState(window.innerWidth > 900);
+  const [isDesktop, setDesktop] = useState(window.innerWidth > 875);
   const [showMin, setShowMin] = useState(false);
   const updateMedia = () => {
-    setDesktop(window.innerWidth > 900);
+    setDesktop(window.innerWidth > 875);
   };
 
   //Listens to see if window is resized
@@ -34,23 +34,23 @@ const Navbar = () => {
               <NavLink to="/shop" activeClassName="active">Shop</NavLink>
               <NavLink to="/contact" activeClassName="active">Contact</NavLink>
             </div>): (
-              <a id="icon" onClick={menuClick}><FaBars /></a>
-              
+              <p id="icon" onClick={menuClick}><FaBars /></p>
             )}
 
             {!isDesktop && showMin && 
             <div className="minLinks">
-              <NavLink to="/" activeClassName="active">Home</NavLink>
-              <NavLink to="/about" activeClassName="active">About</NavLink>
-              <NavLink to="/shop" activeClassName="active">Shop</NavLink>
-              <NavLink to="/contact" activeClassName="active">Contact</NavLink>
+              <p><NavLink to="/" activeClassName="active">Home</NavLink></p>
+              <p><NavLink to="/about" activeClassName="active">About</NavLink></p>
+              <p><NavLink to="/shop" activeClassName="active">Shop</NavLink></p>
+              <p><NavLink to="/contact" activeClassName="active">Contact</NavLink></p>
             </div>}
 
-            <div className="iconLinks">
+            
+          </div>
+          <div className="iconLinks">
                 <img id="search" className="icon" src={SearchIcon} alt="search icon"  height="35px" width="35px" />
                 <img id="bag" className="icon" src={BagIcon} alt="bag icon"  height="35px" width="35px" />
             </div>
-          </div>
       </div>
   );
 }

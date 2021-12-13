@@ -10,7 +10,6 @@
     /*Setting container to relative, and child divs to absolute means the
     divs scale together*/
     position: relative;
-    background-color: $offWhite;
     
     .banner-content{
         position:absolute;
@@ -19,6 +18,7 @@
         padding:3vw;
         border: 5px solid $offWhite;
         text-align:center;
+        background-color: transparent;
         //background-color: rgba(0,0,0, 0.2);
 
         p {
@@ -29,7 +29,6 @@
             font-size:5vw;
             font-weight: bold;
             color:$offWhite;
-            
         }
     }
 
@@ -46,7 +45,6 @@
         border-radius:3vw;
         
         border:none;
-        background-color:$offWhite;
         transition: 0.3s;
         &:hover{
             background-color:$lightPink;
@@ -62,6 +60,7 @@
         margin-bottom:30px;
         color:$grey;
         font-size:calc(10px + 1.5vw);
+        padding-top:30px;
     }
 
     #featured-desc{
@@ -70,21 +69,20 @@
         padding-bottom:30px;
         padding-top:20px;
         color:$cuteBrown;
-        background-color: $offWhite;
     }
 
     .grid-container{
-        position:absolute;
+        position:relative;
         display:grid;
-        grid-template-columns:20% 20% 20%;
-        //grid-template-columns:minmax(100px, 400px);
+        //grid-template-columns:20% 20% 20%;
+        grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
         justify-content: center;
         text-align: center;
-        padding-bottom:50px;
-        //padding-left:20px;
+        margin-bottom:50px;
         margin-top:-30px;
+        padding-left:15%;
+        padding-right:15%;
         gap:30px;
-        background-color: $offWhite;
         color:$cuteBrown;
 
         .grid-item{
@@ -95,12 +93,11 @@
         }
 
         img{
-            //border-radius: 50%;
             width:100%;
+            //min-width: 100px;
             margin-bottom:15px;
             margin-top:50px;
             transition: .5s ease;
-            //border:8px solid $lightPink;
         }
 
         span{
