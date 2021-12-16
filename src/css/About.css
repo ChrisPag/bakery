@@ -2,16 +2,9 @@
 .about {
   position: relative;
   background-color: #FEFDF3;
-  /*.grid-container{
-      position:relative;
-      display:grid;
-      grid-template-columns: 40% 40%;
-      margin-top:500px;
-  }*/
 }
 .about .about-banner {
-  overflow: hidden;
-  position: absolute;
+  position: relative;
 }
 .about .about-banner img {
   width: 100%;
@@ -44,16 +37,14 @@
 .about #cake {
   width: 25%;
 }
-.about .content p {
-  width: 25%;
-  margin-left: 60%;
-  margin-top: -25%;
-  margin-right: 100px;
+.about .content {
+  margin-top: 10%;
 }
 .about .content img {
   margin-left: 20%;
-  margin-top: 400px;
 }
-.about #content2 {
-  margin-top: -200px;
+.about .content .text-content {
+  margin-left: 50%;
+  margin-right: 10%;
+  margin-top: -28%;
 }

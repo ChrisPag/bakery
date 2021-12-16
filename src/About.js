@@ -17,17 +17,10 @@ const About = () =>{
                 <div className="content">
                     <img id="cake" src={Cake} alt="cake"/>
   
+                    <div className="text-content"><p>THE TEAM</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
                     elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua</p>
-                </div>
-                    
-                <div id="content2" className="content" >
-                    <img id="cake" src={Cake} alt="cake"/>
-
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing 
-                    elit, sed do eiusmod tempor incididunt ut labore et dolore 
-                    magna aliqua</p>
+                    magna aliqua</p></div>
                 </div>
             </div>
         </div>

@@ -6,9 +6,9 @@
     background-color: $offWhite;
     //min-height: 100vh;
     .about-banner{
-        overflow:hidden;
-        position:absolute;
-        //position:relative;
+        //overflow:hidden;
+        //position:absolute;
+        position:relative;
         img{
             width:100%;
             filter: blur(3px);
@@ -47,32 +47,19 @@
     #cake{
         width:25%;
     }
-
-    /*.grid-container{
-        position:relative;
-        display:grid;
-        grid-template-columns: 40% 40%;
-        margin-top:500px;
-    }*/
  
     .content{
-        p{
-            width:25%;
-            margin-left:60%;
-            margin-top: -25%;
-            //padding-bottom:25%;
-            margin-right:100px;
-        }
-
+        //position:relative;
+        margin-top:10%;
+        
         img{
             margin-left:20%;
-            margin-top:400px;
-            //padding-bottom:80px;
         }
 
-        
-    }
-    #content2{
-        margin-top:-200px;
+        .text-content{
+            margin-left:50%;
+            margin-right:10%;
+            margin-top: -28%;
+        }
     }
 }

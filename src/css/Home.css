@@ -5,17 +5,40 @@
 
 /* HOME PAGE */
 .home {
+  /*hr {
+      margin: auto;
+      width: calc((10px + 1vw)*40);     
+      //width:calc((10px + 1vw)*35);         
+      background-color: $grey;
+      height: 1px;
+      margin-top:-43px;
+      float:right;
+    }*/
   /*Setting container to relative, and child divs to absolute means the
   divs scale together*/
   position: relative;
+}
+.home .dots {
+  margin-left: 50%;
+  margin-top: -40px;
+}
+.home .dot {
+  height: 15px;
+  width: 15px;
+  background-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+  border: 2px solid #FEFDF3;
+}
+.home #active-dot {
+  background-color: #FEFDF3;
 }
 .home .banner-content {
   position: absolute;
   margin-left: 10%;
   margin-top: -34%;
   padding: 3vw;
-  border: 5px solid #FEFDF3;
-  text-align: center;
   background-color: transparent;
 }
 .home .banner-content p {
@@ -45,33 +68,44 @@
   color: #414141;
   cursor: pointer;
 }
-.home h2 {
-  text-align: center;
-  margin-left: 20px;
-  margin-bottom: 30px;
-  color: #616161;
-  font-size: calc(10px + 1.5vw);
+.home .featured-banner {
+  padding-left: 20px;
+  padding-bottom: 25px;
+  color: #f5cb93;
+  font-size: calc(10px + 1vw);
   padding-top: 30px;
+  background-color: #414141;
+  font-weight: 400;
+}
+.home .featured-banner a {
+  color: #f5cb93;
+  font-weight: lighter;
+  float: right;
+  margin-right: 40px;
+  background-color: #414141;
+}
+.home .featured-banner span {
+  font-size: calc(10px + 0.6vw);
+  background-color: #414141;
 }
 .home #featured-desc {
   width: 50%;
   margin-left: 25%;
   padding-bottom: 30px;
   padding-top: 20px;
-  color: #c5936a;
+  color: #f5cb93;
 }
 .home .grid-container {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  justify-content: center;
+  /*justify-content: center;*/
   text-align: center;
   margin-bottom: 50px;
-  margin-top: -30px;
-  padding-left: 15%;
-  padding-right: 15%;
-  gap: 30px;
-  color: #c5936a;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-top: 50px;
+  color: #414141;
 }
 .home .grid-container .grid-item {
   border-radius: 4%;
@@ -79,13 +113,12 @@
   padding-right: 30px;
 }
 .home .grid-container img {
-  width: 100%;
+  width: 90%;
   margin-bottom: 15px;
   margin-top: 50px;
   transition: 0.5s ease;
 }
 .home .grid-container span {
-  font-weight: bold;
   font-size: 20px;
 }
 .home .overlay-cont {

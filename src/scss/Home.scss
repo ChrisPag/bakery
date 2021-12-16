@@ -7,17 +7,46 @@
 
 /* HOME PAGE */
 .home {
+    /*hr {
+        margin: auto;
+        width: calc((10px + 1vw)*40);     
+        //width:calc((10px + 1vw)*35);         
+        background-color: $grey;
+        height: 1px;
+        margin-top:-43px;
+        float:right;
+      }*/
+
     /*Setting container to relative, and child divs to absolute means the
     divs scale together*/
     position: relative;
     
+    .dots{
+        margin-left:50%;
+        margin-top:-40px;
+    }
+
+    .dot {
+        height: 15px;
+        width: 15px;
+        background-color: transparent;
+        border-radius: 50%;
+        display: inline-block;
+        margin-left:5px;
+        border:2px solid $offWhite;
+    }
+
+    #active-dot{
+        background-color: $offWhite;
+    }
+
     .banner-content{
         position:absolute;
         margin-left:10%;
         margin-top:-34%;
         padding:3vw;
-        border: 5px solid $offWhite;
-        text-align:center;
+        //border: 5px solid $offWhite;
+        //text-align:center;
         background-color: transparent;
         //background-color: rgba(0,0,0, 0.2);
 
@@ -53,14 +82,31 @@
         }
     }
 
-    h2{
+    .featured-banner{
         //color:$offBlack;
-        text-align:center;
-        margin-left:20px;
-        margin-bottom:30px;
-        color:$grey;
-        font-size:calc(10px + 1.5vw);
+        //text-align:center;
+        padding-left:20px;
+        padding-bottom:25px;
+        color:$cuteBrown;
+        font-size:calc(10px + 1vw);
         padding-top:30px;
+        background-color: $offBlack;
+        font-weight: 400;
+
+        a{
+            
+            color:$cuteBrown;
+            font-weight: lighter;
+            float:right;
+            margin-right:40px;
+            background-color: $offBlack;
+        }
+
+        span{
+            font-size: calc(10px + 0.6vw);
+            background-color: $offBlack;
+            
+        }
     }
 
     #featured-desc{
@@ -76,14 +122,14 @@
         display:grid;
         //grid-template-columns:20% 20% 20%;
         grid-template-columns:repeat(auto-fit, minmax(200px, 1fr));
-        justify-content: center;
+        /*justify-content: center;*/
         text-align: center;
         margin-bottom:50px;
-        margin-top:-30px;
-        padding-left:15%;
-        padding-right:15%;
-        gap:30px;
-        color:$cuteBrown;
+        padding-left:5%;
+        padding-right:5%;
+        margin-top:50px;
+        //gap:20px;
+        color:$offBlack;
 
         .grid-item{
             border-radius: 4%;
@@ -93,7 +139,7 @@
         }
 
         img{
-            width:100%;
+            width:90%;
             //min-width: 100px;
             margin-bottom:15px;
             margin-top:50px;
@@ -101,7 +147,7 @@
         }
 
         span{
-            font-weight: bold;
+            //font-weight: bold;
             font-size: 20px;
         }
     }
